@@ -170,74 +170,74 @@ function Chat() {
                                         Are we still holding the metting on monday?
                                     </div>
                             </div>
-                            <div class="comment other">
+                            <div className={`${classes.comment} ${classes.other}`}>
                                 <img src="https://placekitten.com/1000/1000?image=12" alt=""/>
                                 <div className={`${classes.bubble}`}>
                                         Yeah, can you bring napkins?
                                     </div>
                             </div>
-                            <div class="comment other">
+                            <div className={`${classes.comment} ${classes.other}`}>
                                 <img src="https://placekitten.com/700/700?image=16" alt=""/>
-                                    <div class="bubble">
+                                <div className={`${classes.bubble}`}>
                                         I've got napkins covered 👍
                                     </div>
                             </div>
-                            <div class="comment me">
+                            <div className={`${classes.comment} ${classes.me}`}>
                                 <img src="https://placekitten.com/300/300?image=10" alt=""/>
-                                    <div class="bubble">
+                                <div className={`${classes.bubble}`}>
                                         How do you feel about terraforming?
                                     </div>
                             </div>
-                            <div class="comment other">
+                            <div className={`${classes.comment} ${classes.other}`}>
                                 <img src="https://placekitten.com/1000/1000?image=12" alt=""/>
-                                    <div class="bubble">
+                                <div className={`${classes.bubble}`}>
                                         I feel like thats's a bit off topic.
                                     </div>
                             </div>
                         </div>
-                        <div class="input-container">
-                            <button class="attach">
-                                <i class="fa fa-paperclip"></i>
+                        <div className={`${classes.input_container}`}>
+                            <button className={`${classes.attach}`}>
+                                <i className={`${classes.fa} ${classes.fa_paperclip}`}></i>
                             </button>
-                            <div class="textarea-container">
+                            <div className={`${classes.textarea_container}`}>
                                 <textarea type="text" placeholder="message"></textarea>
                             </div>
-                            <button class="send">
-                                <i class="fa fa-paper-plane"></i>
+                            <button className={`${classes.send}`}>
+                                <i className={`${classes.fa} ${classes.fa_paper_plane}`}></i>
                             </button>
                         </div>
                     </div>
-                    <div class="contact-detail">
-                        <button class="close">
+                    <div className={`${classes.contact_detail}`}>
+                        <button className={`${classes.close}`}>
                             x
                         </button>
                         <img src="https://placekitten.com/200/200?image=2" alt=""/>
                             <h3>Invasion Force</h3>
-                            <div class="bio">
+                        <div className={`${classes.bio}`}>
                                 A bunch of great weirdos
                             </div>
-                            <ul class="contact-list">
+                        <ul className={`${classes.contact_list}`}>
                                 <li>
-                                    <img class="contact-img" src="https://placekitten.com/700/700?image=16" alt=""/>
-                                        <span class="name">
+                                <img className={`${classes.contact_img}`} src="https://placekitten.com/700/700?image=16" alt=""/>
+                                <span className={`${classes.name}`}>
                                             Maria Hugges
                                         </span>
                                 </li>
                                 <li>
-                                    <img class="contact-img" src="https://placekitten.com/1000/1000?image=12" alt=""/>
-                                        <span class="name">
+                                <img className={`${classes.contact_img}`} src="https://placekitten.com/1000/1000?image=12" alt=""/>
+                                <span className={`${classes.name}`}>
                                             Lucy Farrel
                                         </span>
                                 </li>
                                 <li>
-                                    <img class="contact-img" src="https://placekitten.com/540/540" alt=""/>
-                                        <span class="name">
+                                <img className={`${classes.contact_img}`} src="https://placekitten.com/540/540" alt=""/>
+                                <span className={`${classes.name}`}>
                                             Your Neighbor
                                         </span>
                                 </li>
                                 <li>
-                                    <img class="contact-img" src="https://placedog.net/300/300" alt=""/>
-                                        <span class="name">
+                                <img className={`${classes.contact_img}`} src="https://placedog.net/300/300" alt=""/>
+                                <span className={`${classes.name}`}>
                                             Sam Willis
                                         </span>
                                 </li>
