@@ -15,45 +15,22 @@ body {
   overflow: hidden;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 80px auto;
-  grid-template-rows: 100vh;
-}
-
 /*======= Side Nav ==========*/
 
-.side-nav {
-  background: var(--grey-3);
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  height: 100%;
-  z-index: 2;
-}
-
-.side-nav .profile img {
-  margin-top: 15px;
-  width: auto;
-  height: 60px;
-  filter: grayscale(1);
-  border-radius: 50%;
-}
-
-.icon-container {
+.icon_container {
   line-height: 60px;
   height: 60px;
 }
 
-.icon-container:hover {
+.icon_container:hover {
   background: var(--grey-2);
 }
 
-.icon-container + .active {
+.icon_container + .active {
   border-left: 8px solid var(--color-1);
 }
 
-.top-nav {
+.top_nav {
   border-bottom: 1px solid grey;
   width: 100%;
   height: 100%;
@@ -62,15 +39,21 @@ body {
   justify-content: center;
 }
 
-.top-nav .logo {
+.top_nav .logo {
   text-align: center;
   font-size: 150%;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   color: var(--color-1);
 }
-
-.main-veiw {
+.last_messages{
+      font-size: small;
+    width: 18vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main_veiw {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 8vh 92vh;
@@ -96,34 +79,35 @@ body {
 
 /*=========Message List======*/
 
-.message-list {
+.message_list {
   background: var(--grey-2);
   height: 100%;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 640px) {
-  .message-list {
+  .message_list {
     position: absolute;
     display: none;
     z-index: 1;
   }
 }
 
-.message-list .list-top {
+.message_list .list_top {
   display: grid;
-  grid-template-columns: 60% 22% 18%;
+  grid-template-columns: 80% 20%;
   padding: 5px;
 }
 
-.message-list .list-top .close-list {
+.message_list .list_top .close_list {
   display: none;
 }
 
 @media screen and (max-width: 640px) {
-  .message-list .list-top {
+  .message_list .list_top {
     grid-template-columns: 60% 20% 10% 10%;
   }
-  .message-list .list-top .close-list {
+  .message-list .list_top .close_list {
     display: block;
     position: absolute;
     background: transparent;
@@ -137,18 +121,18 @@ body {
   }
 }
 
-.message-list input {
+.message_list input {
   display: inline;
   font-size: 20px;
   padding: 10px 10px;
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 30px;
   outline: none;
   border: none;
   background: var(--grey-1);
   color: white;
 }
 
-.message-list .search {
+.message_list .search {
   display: inline;
   border: none;
   border-radius: 0px 30px 30px 0px;
@@ -157,7 +141,7 @@ body {
   outline: none;
 }
 
-.message-list .add {
+.message_list .add {
   border: none;
   background: transparent;
   font-size: 30px;
@@ -165,7 +149,7 @@ body {
   outline: none;
 }
 
-.message-list .contact {
+.message_list .contact {
   display: grid;
   grid-template-columns: 25% auto;
   height: 50px;
@@ -177,17 +161,17 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-  .message-list .contact {
+  .message_list .contact {
     display: grid;
     grid-template-columns: 60px auto;
   }
 }
 
-.message-list .active {
+.message_list .active {
   background: var(--grey-4);
 }
 
-.message-list .unread:before {
+.message_list .unread:before {
   content: "";
   display: block;
   position: absolute;
@@ -200,13 +184,13 @@ body {
   z-index: 1;
 }
 
-.message-list .name {
+.message_list .name {
   margin: 5px 10px;
   font-size: 16px;
   font-weight: 100;
 }
 
-.message-list img {
+.message_list img {
   height: 100%;
   width: auto;
   max-height: 50px;
@@ -234,19 +218,19 @@ body {
   align-items: center;
 }
 
-.chat .top .open-message {
+.chat .top .open_message {
   padding: 0 10px;
   color: var(--grey-3);
   display: none;
 }
 
 @media screen and (max-width: 640px) {
-  .chat .top .open-message {
+  .chat .top .open_message {
     display: block;
   }
 }
 
-.chat .top .open-message:hover {
+.chat .top .open_message:hover {
   color: var(--color-1);
   transition: color ease 0.5s;
 }
@@ -265,26 +249,26 @@ body {
   transition: color ease 0.5s;
 }
 
-.chat .button-container {
+.chat .button_container {
   text-align: right;
   width: 75%;
 }
 
-.chat .button-container button {
+.chat .button_container button {
   border: none;
   background: white;
   font-size: 20px;
   color: var(--grey-2);
 }
 
-.chat .button-container button:hover {
+.chat .button_container button:hover {
   color: var(--color-1);
   transition: color ease 0.5s;
 }
 
 /*======== Chat Message Container =====*/
 
-.chat .message-container {
+.chat .message_container {
   padding: 5px;
   overflow-y: scroll;
   width: 100%;
@@ -401,9 +385,9 @@ body {
 
 /*======== Typing part =========*/
 
-.chat .input-container {
+.chat .input_container {
   display: grid;
-  grid-template-columns: 8vh auto 8vh;
+  grid-template-columns: auto 8vh;
   padding: 10px 6px;
   border-top: 1px solid #ccc;
 }
@@ -417,7 +401,7 @@ body {
   max-width: 60px;
 }
 
-.chat .textarea-container {
+.chat .textarea_container {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -450,7 +434,7 @@ body {
 }
 /*======= Contact List =======*/
 
-.contact-detail {
+.contact_detail {
   position: absolute;
   right: 0;
   top: 0;
@@ -469,7 +453,7 @@ body {
   background: transparent;
 }
 
-.contact-detail img {
+.contact_detail img {
   width: 70%;
   height: auto;
   display: block;
@@ -478,24 +462,24 @@ body {
   border-radius: 50%;
 }
 
-.contact-detail h3 {
+.contact_detail h3 {
   color: var(--grey-2);
   text-align: center;
   margin: 8px 0px;
   font-size: 22px;
 }
 
-.contact-detail .bio {
+.contact_detail .bio {
   text-align: center;
 }
 
-.contact-detail ul {
+.contact_detail ul {
   margin: 0px;
   margin-top: 10px;
   padding: 0px;
 }
 
-.contact-detail ul li {
+.contact_detail ul li {
   list-style: none;
   width: 100%;
   background: white;
@@ -507,7 +491,7 @@ body {
   margin-bottom: 5px;
 }
 
-.contact-detail ul li .contact-img {
+.contact_detail ul li .contact_img {
   border-radius: none;
   height: auto;
   width: 55px;
@@ -516,6 +500,6 @@ body {
   filter: grayscale(1);
 }
 
-.contact-list ul li .name {
+.contact_list ul li .name {
   display: inline-block;
 }
