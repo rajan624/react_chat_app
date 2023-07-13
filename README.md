@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Dummy Chat App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a dummy chat application built using React. It allows users to search for conversations by contact name, view conversations in the left sidebar, start new conversations, send messages
 
-## Available Scripts
+# Features
+Search: Conversations can be searched by contact name.
 
-In the project directory, you can run:
 
-### `npm start`
+Left Sidebar: Shows all the conversations created. Each conversation displays the contact name and some text from the last message.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Create Conversation Button: Opens a popup and loads all the contacts from a dummy data JSON file. Clicking on a contact starts a new conversation if no conversation was previously started, or opens the existing conversation for that contact.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Right Side View: Shows the messages of the currently selected conversation.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Send Message: Users can send messages in the conversation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Technologies Used
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Reactjs: A JavaScript library for building user interfaces.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React Hooks: A feature introduced in React 16.8 that allows using state and other React features without writing a class.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+JSON: A lightweight data-interchange format used for storing dummy data.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+HTML and CSS: Used for structuring and styling the application.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Setup
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Clone the repository: git clone <repository-url>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Navigate to the project directory: cd dummy-chat-app
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Install the dependencies: npm install
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Start the development server: npm start
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open the application in your browser at http://localhost:3000
+
+
+# Usage
+
+## Start the application by following the setup instructions.
+
+
+The homepage displays the list of conversations in the left sidebar and the currently selected conversation's messages in the right side view.
+
+
+Use the search bar to search for conversations by contact name.
+
+
+Click on a conversation in the left sidebar to view its messages.
+
+
+Click the "Create Conversation" button to open a popup that displays all the contacts from the dummy data file.
+
+
+Clicking on a contact in the popup will start a new conversation if one doesn't exist for that contact, or open the existing conversation.
+
+
+In the conversation view, enter a message in the input field and click the "Send" button to send the message.
+
+![Screenshot 2023-07-13 223031](https://github.com/rajan624/react_chat_app/assets/60213161/f5ed3544-fd91-4f85-9eb1-1f5d2a5a2a74)
+
+
+
+![Screenshot 2023-07-13 223241](https://github.com/rajan624/react_chat_app/assets/60213161/16316bd4-ad93-46cb-a8e2-3aa5524daca9)
+
+That's it! You can now use the dummy chat application to view and manage conversations.
