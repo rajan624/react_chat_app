@@ -2,6 +2,8 @@
 
 This is a dummy chat application built using React. It allows users to search for conversations by contact name, view conversations in the left sidebar, start new conversations, send messages
 
+Check out the live version of the project: <a href="https://react-chat-app-sepia.vercel.app/" target="_blank">Chat App</a>
+
 # Features
 Search: Conversations can be searched by contact name.
 
